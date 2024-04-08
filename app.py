@@ -51,16 +51,31 @@ def share_file():
     filename = request.form.get('filename')
 
     # Generate a unique shareable link for the file
-    shareable_link = generate_shareable_link(filename)
+    shareable_link = generate_blob_sas_url(filename)
 
     # Display the shareable link (this can be improved to store links in a database for later retrieval)
     return render_template('share.html', filename=filename, shareable_link=shareable_link)
 
-def generate_shareable_link(filename):
-    # Generate a unique token for the shareable link
-    token = str(uuid.uuid4())
-    shareable_link =f"https://clouddrivehub.blob.core.windows.net/download/{token}/{filename}"
-    return shareable_link
+from azure.storage.blob import BlobServiceClient, generate_blob_sas, BlobSasPermissions
+from datetime import datetime, timedelta
+def generate_blob_sas_url(storage_account_name, container_name, blob_name, account_key, expiry_hours=1):
+    blob_service_client = BlobServiceClient(account_url=f"https://{storage_account_name}.blob.core.windows.net", credential=account_key)
+    blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
+
+    expiry = datetime.utcnow() + timedelta(hours=expiry_hours)
+
+    sas_token = generate_blob_sas(
+        account_name=storage_account_name,
+        container_name=container_name,
+        blob_name=blob_name,
+        account_key=account_key,
+        permission=BlobSasPermissions(read=True),
+        expiry=expiry
+    )
+
+    blob_url_with_sas = f"{blob_client.url}?{sas_token}"
+
+    return blob_url_with_sas
 
 @app.route('/files')
 def list_files():
