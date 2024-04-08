@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>/* styles.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            margin-top: 50px;
+        }
+
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #abbbe3;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+section {
+  margin-bottom: 40px;
+  top: 400px;
+  margin-right: 100px;
+
+}
+
+section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 50px;
+}
+
+section p {
+  color: #555;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="container">
+        <header>
+          <h1>About Us - Cloud Hub</h1>
+        </header>
+          <section>
+          <h2>Our Mission</h2>
+          <p>At Cloud Hub, our mission is to provide a secure and reliable cloud storage platform that allows users to store and access their files from anywhere in the world.</p>
+        </section>
+        <section>
+          <h2>Our Features</h2>
+          <ul>
+            <li>Secure Storage: Your files are encrypted and securely stored in our cloud servers, ensuring maximum protection of your data.</li>
+            <li>Easy Sharing: Share your files with friends, family, or colleagues effortlessly with our intuitive sharing features.</li>
+            <li>Multi-Platform Access: Access your files from any device, whether it's a computer, smartphone, or tablet, with our cross-platform compatibility.</li>
+          </ul>
+        </section>
+      </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

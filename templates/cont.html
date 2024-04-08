@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      *{
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+       font-family: sans-serif;
+      } 
+      .contact{
+       min-height: 100vh;
+       background-color: #97b5ec;
+       padding: 50px;
+       text-align: center;
+      }
+      .container{
+       max-width: 800px;
+       margin: 0 auto;
+      }
+      .container h2{
+       font-size: 36px;
+       margin-bottom: 40px;
+       color: #333;
+      }
+      .contact-wrapper{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       grid-gap: 30px;
+      }
+      .contact-form{
+       text-align: left;
+      }
+      .contact-form h3{
+       font-size: 24px;
+       margin-bottom: 20px;
+       color: #333;
+      }
+      .form-group{
+       margin-bottom: 20px;
+      }
+      input,textarea{
+       width: 100%;
+       padding: 12px;
+       border-radius: 8px;
+       border: none;
+       background-color: #f8f9fa;
+       color: #333;
+      }
+      input:focus,
+      textarea:focus{
+       outline: none;
+       box-shadow: 0 0 12px #4154d2;
+      }
+      button{
+       display: inline-block;
+       padding: 12px 24px;
+       background-color: #42268e;
+       color: #fff;
+       border: none;
+       cursor: pointer;
+       transition: 0.3s ease;
+      }
+      button:hover{
+       background-color: #5e3f9d;
+      }
+      .contact-info{
+       text-align: left;
+      }
+      .contact-info h3{
+       font-size: 24px;
+       margin-bottom: 20px;
+       color: #333;
+      }
+      .contact-info p{
+       margin-bottom: 10px;
+       color: #555;
+      } 
+      .contact-info i{
+       color: #4caf50;
+       margin-right: 10px;
+      }
+      @media screen and (max-width: 768px){
+       .container{
+           padding: 20px;
+       }
+       .contact-wrapper{
+           grid-template-columns: 1fr;
+       }
+      }
+      
+   </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Files</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form action="/contact" method="POST">
+                        <div class="form-group">
+                         <input type="text" name="name" placeholder="your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="your Email">
+                           </div>
+                           <div class="form-group">
+                           <textarea name="message" placeholder="Your Message"></textarea>
+                           </div>
+                           <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa-solid fa-phone"></i>+91 9840336323</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>chennai,india</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

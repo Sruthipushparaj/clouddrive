@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Drive - Your Personal Cloud Storage</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1 {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        label:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+                <h2>Cloud Hub</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="/upload_file1">Drive</a></li>
+                <li><a href="/files">File</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                  {% if 'username' in session %}
+                    <a href="#">{{ session['username'] }}</a>
+                    <a href="/logout">Logout</a>
+                  {% else %}
+                    <a href="/signup">Signup</a>
+                  {% endif %}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <div class="container1">
+            <h1>Upload File</h1>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="file">Choose File</label>
+                <input type="file" name="file" id="file">
+                <br>
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="{{ url_for('static', filename='images/storage.jpg') }}" alt="storage">
+                    <h3>Secure Storage</h3>
+                    <p>Your files are encrypted and securely stored in our cloud servers, ensuring maximum protection of your data.</p>
+                </div>
+                <div class="feature">
+                    <img src="{{ url_for('static', filename='images/Share.jpg') }}" alt="Share">
+                    <h3>Easy Sharing</h3>
+                    <p>Share your files with friends, family, or colleagues effortlessly with our intuitive sharing features.</p>
+                </div>
+                <div class="feature">
+                    <img src="{{ url_for('static', filename='images/multiplate.jpg') }}" alt="Multi-Platform">
+                    <h3>Multi-Platform Access</h3>
+                    <p>Access your files from any device, whether it's a computer, smartphone, or tablet, with our cross-platform compatibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-social">
+            <h3>Connect with</h3>
+            <div class="social-icons">
+                <img src="{{ url_for('static', filename='images/face.png') }}" alt="Share">
+                <img src="{{ url_for('static', filename='images/insta.webp') }}" alt="Share">
+                <img src="{{ url_for('static', filename='images/twwiter.png') }}" alt="Share">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
