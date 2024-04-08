@@ -59,7 +59,7 @@ def share_file():
 def generate_shareable_link(filename):
     # Generate a unique token for the shareable link
     token = str(uuid.uuid4())
-    shareable_link = f"https://yourdomain.com/download/{token}/{filename}"
+    shareable_link = f"https://clouddrivehub.blob.core.windows.net/download/{token}/{filename}"
     return shareable_link
 
 @app.route('/files')
