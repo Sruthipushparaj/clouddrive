@@ -41,23 +41,6 @@ CONTAINER_PREFIX = "myconnn"
 def get_blob_service_client():
     return BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
 
-# Your other Flask routes and functions...
-
-@app.route('/share_file', methods=['POST'])
-def share_file():
-    if 'username' not in session:
-        return redirect(url_for('login'))
-
-    filename = request.form.get('filename')
-
-    # Generate a unique shareable link for the file
-    shareable_link = generate_blob_sas_url(filename)
-
-    # Display the shareable link (this can be improved to store links in a database for later retrieval)
-    return render_template('share.html', filename=filename, shareable_link=shareable_link)
-
-from azure.storage.blob import BlobServiceClient, generate_blob_sas, BlobSasPermissions
-from datetime import datetime, timedelta
 def generate_blob_sas_url(storage_account_name, container_name, blob_name, account_key, expiry_hours=1):
     blob_service_client = BlobServiceClient(account_url=f"https://{storage_account_name}.blob.core.windows.net", credential=account_key)
     blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
@@ -76,6 +59,22 @@ def generate_blob_sas_url(storage_account_name, container_name, blob_name, accou
     blob_url_with_sas = f"{blob_client.url}?{sas_token}"
 
     return blob_url_with_sas
+
+@app.route('/share_file', methods=['POST'])
+def share_file():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+
+    filename = request.form.get('filename')
+
+    # Generate a unique shareable link for the file
+    try:
+        shareable_link = generate_blob_sas_url("clouddrivehub", "myconnnsangeetha", filename, "nL2eTiYN/RUh3hEzILDCZhf7YNo4b2ZbbDi5ofPOCgRF9SFsX5uMcgoSD80xQqdc/B8xeTvQVHTx+ASt9cyETg==")
+    except Exception as e:
+        return f"Error generating SAS URL: {str(e)}"
+
+    # Display the shareable link (this can be improved to store links in a database for later retrieval)
+    return render_template('share.html', filename=filename, shareable_link=shareable_link)
 
 @app.route('/files')
 def list_files():
