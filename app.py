@@ -41,25 +41,6 @@ CONTAINER_PREFIX = "myconnn"
 def get_blob_service_client():
     return BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
 
-def generate_blob_sas_url(storage_account_name, container_name, blob_name, account_key, expiry_hours=1):
-    blob_service_client = BlobServiceClient(account_url=f"https://{storage_account_name}.blob.core.windows.net", credential=account_key)
-    blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
-
-    expiry = datetime.utcnow() + timedelta(hours=expiry_hours)
-
-    sas_token = generate_blob_sas(
-        account_name=storage_account_name,
-        container_name=container_name,
-        blob_name=blob_name,
-        account_key=account_key,
-        permission=BlobSasPermissions(read=True),
-        expiry=expiry
-    )
-
-    blob_url_with_sas = f"{blob_client.url}?{sas_token}"
-
-    return blob_url_with_sas
-
 @app.route('/share_file', methods=['POST'])
 def share_file():
     if 'username' not in session:
@@ -68,14 +49,16 @@ def share_file():
     filename = request.form.get('filename')
 
     # Generate a unique shareable link for the file
-    try:
-        shareable_link = generate_blob_sas_url("clouddrivehub", "myconnnsangeetha", filename, "nL2eTiYN/RUh3hEzILDCZhf7YNo4b2ZbbDi5ofPOCgRF9SFsX5uMcgoSD80xQqdc/B8xeTvQVHTx+ASt9cyETg==")
-    except Exception as e:
-        return f"Error generating SAS URL: {str(e)}"
+    shareable_link = generate_shareable_link(filename)
 
     # Display the shareable link (this can be improved to store links in a database for later retrieval)
     return render_template('share.html', filename=filename, shareable_link=shareable_link)
 
+def generate_shareable_link(filename):
+    # Generate a unique token for the shareable link
+    token = str(uuid.uuid4())
+    shareable_link = f"https://clouddrivehub.blob.core.windows.net/download/{token}/{filename}"
+    return shareable_link
 @app.route('/files')
 def list_files():
     if 'username' not in session:
