@@ -219,6 +219,12 @@ def contact():
     
     # For GET requests, render the contact form
     return render_template('cont.html')
+
+
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
+    
 if __name__ == '__main__':
     app.run(debug=True)
 
