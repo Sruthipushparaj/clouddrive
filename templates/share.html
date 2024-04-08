@@ -51,7 +51,7 @@
         <div class="file-info">
             <p><strong>Filename:</strong> {{ filename }}</p>
             <p><strong>Share URL:</strong></p>
-            <p class="share-link">{{ shareable_link }}</p>
+            <a href="{{shareable_link}}"><p class="share-link">{{ shareable_link }}</p></a>
         </div>
         <a href="{{ url_for('home') }}" class="back-btn">Back to Home</a>
     </div>
