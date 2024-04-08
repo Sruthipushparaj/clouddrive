@@ -35,7 +35,7 @@ create_table()
 
 # Azure Blob Storage credentials
 AZURE_STORAGE_CONNECTION_STRING ="DefaultEndpointsProtocol=https;AccountName=clouddrivehub;AccountKey=nL2eTiYN/RUh3hEzILDCZhf7YNo4b2ZbbDi5ofPOCgRF9SFsX5uMcgoSD80xQqdc/B8xeTvQVHTx+ASt9cyETg==;EndpointSuffix=core.windows.net"
-
+CONTAINER_PREFIX = "myconnn"
 
 
 def get_blob_service_client():
