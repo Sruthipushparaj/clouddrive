@@ -34,8 +34,7 @@ def get_user(username):
 create_table()
 
 # Azure Blob Storage credentials
-AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=sowmi23;AccountKey=fe0SLaUaaAeumKSbEnWaikDG7EnxN/f5pqm2Bzcnh2IrvGjmN3q3RbH/nk43pi1Oea8mQu37Oomd+ASt22Ex7w==;EndpointSuffix=core.windows.net"
-CONTAINER_PREFIX = "myconnn"
+AZURE_STORAGE_CONNECTION_STRING ="DefaultEndpointsProtocol=https;AccountName=clouddrivehub;AccountKey=nL2eTiYN/RUh3hEzILDCZhf7YNo4b2ZbbDi5ofPOCgRF9SFsX5uMcgoSD80xQqdc/B8xeTvQVHTx+ASt9cyETg==;EndpointSuffix=core.windows.net"
 
 
 
