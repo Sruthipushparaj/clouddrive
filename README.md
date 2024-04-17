@@ -63,6 +63,12 @@ To set up and run the Cloud Drive application locally, follow these steps:
 7. Azure Bot: Azure Bot Service enables you to build, deploy, and manage intelligent bots that interact with users across multiple channels, such as web, mobile, Microsoft Teams, Slack, and more. It provides tools and SDKs for bot development, integration with Azure AI services, and monitoring capabilities.
 
 ## Contribution
+1.Abinesh Backend(python&flask) 
+2.Ananda kumar Frontend(html,css,JavaScript) 
+3.sruthi(cloud services) 
+4.Sarath(Readme file and Voiceover) 
+
+
 
 ## Screenshort
 ![WhatsApp Image 2024-04-17 at 10 07 20 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/fa5f8de4-fa48-4937-914f-36cded5a4f6c)
