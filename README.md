@@ -65,51 +65,34 @@ To set up and run the Cloud Drive application locally, follow these steps:
 ## Contribution
 
 ## Screenshort
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/022f5153-049a-4fad-b686-a41ba91c2257)
+![WhatsApp Image 2024-04-17 at 10 07 20 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/fa5f8de4-fa48-4937-914f-36cded5a4f6c)
 
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/03dcbdab-c9fa-434c-bdf4-0738e2e2d3a1)
+![WhatsApp Image 2024-04-17 at 10 07 52 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/1b4a3c58-e18c-481f-a9d5-4143d167dad7)
 
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/20f14073-91a4-4d0b-997a-1e05d80ddc70)
+![WhatsApp Image 2024-04-17 at 10 08 30 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/0f0c946e-67d2-4446-8cc4-b615b4f68b67)
 
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/57609b17-008f-4718-8fb1-2ec14956a183)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/053c1cba-7819-4b3d-8815-15f1e9193670)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/35a7b9b2-6bf8-441e-aa3d-80ccc5c547dc)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/f5eceadb-f626-4d35-b735-2d5381d6a54f)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/20c8429b-29a2-4408-822a-3b83fd0c4c8b)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/a7ff7164-7f74-4d22-8827-8a2fbb18e1b9)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/8166cfc0-a7ad-43c5-b437-4daedda0f44c)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/b08e0953-a888-43b5-8792-15f9e42dae5e)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/cc4581d6-aa2a-4f57-8011-ce5030604d41)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/a9efe5b5-95a1-47c6-8c37-629b8fdc3e34)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/83322d8e-04ac-4083-804f-ef3b078a7f06)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/1cec1028-a20f-4a0b-a30a-3b22ff93db50)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/53442d52-8861-477d-82fe-f4cb1095b1ba)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/7920c63a-d66f-4150-b2dc-fae4ea1306ff)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/96d79768-6d00-4387-9a06-eb0deb4ed930)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/30fef92d-f90a-4ee2-ba73-ac88c24de586)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/9fb26f9e-479e-4e2e-8a20-18f16a6cf2d5)
-
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/94b2b705-62b6-41a9-acc2-c6daca6042e3)
+![WhatsApp Image 2024-04-17 at 10 11 41 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/c99ef371-5771-493c-bfd6-5646650dd1af)
+![WhatsApp Image 2024-04-17 at 10 09 29 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/73e6692a-842d-484c-9e4c-c1136acc51a0)
+![WhatsApp Image 2024-04-17 at 10 09 16 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/1f1b9f6e-7da5-400b-bafa-a577f34c9a87)
+![WhatsApp Image 2024-04-17 at 10 08 57 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/f48340d1-d4ee-4154-b161-55ec5cb4c0b7)
+![WhatsApp Image 2024-04-17 at 10 13 45 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/31ba1c57-494c-47bc-81f6-0c1f20d594e8)
+![WhatsApp Image 2024-04-17 at 10 13 22 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/f69b191c-28f6-44a8-bd0f-6620c92cfc44)
+![WhatsApp Image 2024-04-17 at 10 12 59 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/270edf37-04e9-4e44-9863-23840e17c756)
+![WhatsApp Image 2024-04-17 at 10 12 36 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/eb250128-8ef0-4a83-8dfe-df33d36c45a1)
+![WhatsApp Image 2024-04-17 at 10 12 02 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/a66d5014-920a-40f2-b45f-0f1746b5857b)
 
 
-## demo
-![image](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/f40a4579-8835-4740-b056-de782bf066ec)
+
+
+![WhatsApp Image 2024-04-17 at 10 18 57 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/3cc84412-63fa-4641-9a50-b96eaade192e)
+![WhatsApp Image 2024-04-17 at 10 18 35 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/8a3f0391-2a86-4294-82fd-aa06faca57a7)
+![WhatsApp Image 2024-04-17 at 10 18 06 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/ddf6ad01-78ac-4a41-a5e7-25cd65e78e1c)
+![WhatsApp Image 2024-04-17 at 10 17 22 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/48714492-2739-4b68-b1cd-98ad6a374cfa)
+![WhatsApp Image 2024-04-17 at 10 20 39 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/c9dbeaee-13ca-4415-a1f0-ca63a4db3c12)
+![WhatsApp Image 2024-04-17 at 10 20 12 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/8aaadf71-049d-475a-8b65-15c721bbfa98)
+![WhatsApp Image 2024-04-17 at 10 19 45 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/5948f7cf-40b7-4616-ae9d-232f40b387f9)
+![WhatsApp Image 2024-04-17 at 10 19 18 AM](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/bccd5212-7855-4732-a50c-99876747cdfb)
+
 
 
 ## demo url 
