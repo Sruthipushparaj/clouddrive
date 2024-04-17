@@ -107,6 +107,11 @@ To set up and run the Cloud Drive application locally, follow these steps:
 
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/94b2b705-62b6-41a9-acc2-c6daca6042e3)
 
+
+## demo
+![image](https://github.com/Sruthipushparaj/clouddrive/assets/163094604/f40a4579-8835-4740-b056-de782bf066ec)
+
+
 ## demo url 
 https://clouddrivehub.azurewebsites.net/login
 
