@@ -66,25 +66,45 @@ To set up and run the Cloud Drive application locally, follow these steps:
 
 ## Screenshort
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/022f5153-049a-4fad-b686-a41ba91c2257)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/03dcbdab-c9fa-434c-bdf4-0738e2e2d3a1)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/20f14073-91a4-4d0b-997a-1e05d80ddc70)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/57609b17-008f-4718-8fb1-2ec14956a183)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/053c1cba-7819-4b3d-8815-15f1e9193670)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/35a7b9b2-6bf8-441e-aa3d-80ccc5c547dc)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/f5eceadb-f626-4d35-b735-2d5381d6a54f)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/20c8429b-29a2-4408-822a-3b83fd0c4c8b)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/a7ff7164-7f74-4d22-8827-8a2fbb18e1b9)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/8166cfc0-a7ad-43c5-b437-4daedda0f44c)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/b08e0953-a888-43b5-8792-15f9e42dae5e)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/cc4581d6-aa2a-4f57-8011-ce5030604d41)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/a9efe5b5-95a1-47c6-8c37-629b8fdc3e34)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/83322d8e-04ac-4083-804f-ef3b078a7f06)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/1cec1028-a20f-4a0b-a30a-3b22ff93db50)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/53442d52-8861-477d-82fe-f4cb1095b1ba)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/7920c63a-d66f-4150-b2dc-fae4ea1306ff)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/96d79768-6d00-4387-9a06-eb0deb4ed930)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/30fef92d-f90a-4ee2-ba73-ac88c24de586)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/9fb26f9e-479e-4e2e-8a20-18f16a6cf2d5)
+
 ![image](https://github.com/Sruthipushparaj/clouddrive/assets/144773234/94b2b705-62b6-41a9-acc2-c6daca6042e3)
 
 ## demo url 
