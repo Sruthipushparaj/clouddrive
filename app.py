@@ -61,22 +61,25 @@ def generate_shareable_link(filename):
     return shareable_link
 @app.route('/files')
 def list_files():
-    if 'username' not in session:
-        return redirect(url_for('login'))
-
-    username = session['username']
-    container_name = CONTAINER_PREFIX + username
-
-    # Create a BlobServiceClient from the connection string
-    blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
-
-    # Get a list of blobs in the container
-    blobs = []
-    container_client = blob_service_client.get_container_client(container_name)
-    for blob in container_client.list_blobs():
-        blobs.append(blob.name)
-
-    return render_template('view.html', blobs=blobs)
+    try:
+        if 'username' not in session:
+            return redirect(url_for('login'))
+    
+        username = session['username']
+        container_name = CONTAINER_PREFIX + username
+    
+        # Create a BlobServiceClient from the connection string
+        blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
+    
+        # Get a list of blobs in the container
+        blobs = []
+        container_client = blob_service_client.get_container_client(container_name)
+        for blob in container_client.list_blobs():
+            blobs.append(blob.name)
+    
+        return render_template('view.html', blobs=blobs)
+    except:
+        retuen "Not in Files"
 # Route for retrieving a file from Azure Blob Storage
 @app.route('/retrieve/<filename>')
 def retrieve_file(filename):
